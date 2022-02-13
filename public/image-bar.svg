@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1323.2 1296.4" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="a" x1=".5" x2=".5" y2="1">
+<stop offset="0" stopColor="#7510b7" stopOpacity="0.388"/>
+<stop offset="1" stopColor="#3b085c" stopOpacity="0"/>
+</linearGradient>
+</defs>
+<path transform="matrix(.995 -.105 .105 .995 -129.31 320.64)" d="m374.62 963.88-225.69 32.937 981.12-1143.8 225.69-32.937z" fill="rgba(117,16,183,.2)" style="isolation:isolate;mix-blend-mode:multiply" data-name="Path 2787"/>
+</svg>

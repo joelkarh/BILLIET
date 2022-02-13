@@ -1,0 +1,233 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// 5. Add additional custom code here
+
+#logo {
+    padding: 18px;
+}
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubar {
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    position: relative;
+
+}
+.menubar::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    top: 7px;
+    background-color: #000;
+    left: 0;
+    position: absolute;
+}
+.menubar:before {
+    content: '';
+    width: 30px;
+    height: 4px;
+    top: 15px;
+    background-color: #000;
+    left: 0;
+    position: absolute;
+}
+
+#wrapper {
+    background: url("../public/home_bg.png"), linear-gradient(to bottom right,#444446c7,#0f0e0e);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    position: relative;
+
+}
+
+.first-header {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    padding: 2.5rem;
+
+    h1 {
+        font-size: 3.4rem;
+        font-weight: bold;
+        font-style: normal;
+    }
+    p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .corner-left_m {
+        position: absolute;
+        padding: 0;
+        bottom: 0;
+    }
+}
+main {
+    height: 100vh;
+}
+
+.home {
+    overflow: hidden;
+
+    article {
+        position: relative;
+        padding: 1.5rem auto;
+    }
+
+    .purple-bar {
+        position: absolute;
+        bottom: 0;
+        width: max-content;
+        z-index: -1;
+        margin-left: -22rem;
+        top: 3rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: rgba(117, 16, 183, 1);
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1.125rem;
+        font-weight: 200;
+
+    }
+}
+.box-Image {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+.btn-home {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: rgba(140,140,140,0.1);
+}
+.btn-font {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 5px;
+    color: #5D5D5D5D;
+}
+.diensten-article{
+    h1{
+        padding: 25px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+
+    background: url("../public/diensten-d.png") no-repeat center ;
+    justify-content: space-around;
+    padding: 10px;
+    height: auto;
+
+    article{
+        background-color:white;
+        max-width: 398px;
+        padding: 25px;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+.klanttevredenheid-article{
+    h1{
+        padding: 25px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    article{
+        border-radius: 5px;
+        box-shadow:5px 5px 15px #707070;
+        max-width: 398px;
+        padding: 25px;
+        margin: 10px;
+        text-align: center;
+    }
+    justify-content: space-around;
+    padding: 10px;
+    height: auto;
+}
+.next-btn{
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .next-btn__1{
+        width: 25px;
+        height: 20px;
+        background-color: #D8D8D8;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .menubar {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .diensten-article {
+        padding: 50px;
+        h1{
+            padding: 35px;
+            text-align: left;
+        }
+        article{
+            margin: inherit;
+            
+        }
+        
+    }
+}
