@@ -8,10 +8,10 @@ const Layout = ({children}) => {
         <nav className="row">
             <Navbar/>
         </nav>
-            <Header/>
-        <main className="">{children}</main>
-       {/* </Footer> */}
-    </div>)
+        <Header/>
+        {children}
+        </div>
+    )
 };
 
 export default Layout;

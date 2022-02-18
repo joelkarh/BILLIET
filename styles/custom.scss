@@ -22,19 +22,24 @@
 
 #logo {
     padding: 18px;
+    img{
+        padding: 1rem 4rem;
+    }
 }
 .menu {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    ul{
+        display:none;
+    }
 }
 .menubar {
     width: 30px;
     height: 4px;
     background-color: #000;
     position: relative;
-
 }
 .menubar::after {
     content: '';
@@ -61,20 +66,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    position: relative;
 
 }
 
-.first-header {
+.header-Home {
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
     color: #fff;
     padding: 2.5rem;
-
     h1 {
         font-size: 3.4rem;
-        font-weight: bold;
+        font-weight: 400;
         font-style: normal;
     }
     p {
@@ -82,152 +83,128 @@
         font-weight: 400;
         font-style: normal;
     }
-    .corner-left_m {
-        position: absolute;
-        padding: 0;
-        bottom: 0;
-    }
 }
-main {
-    height: 100vh;
-}
-
-.home {
-    overflow: hidden;
-
-    article {
-        position: relative;
-        padding: 1.5rem auto;
+.main-Intro{
+    article{
+        margin: 2.5rem auto;
     }
-
-    .purple-bar {
-        position: absolute;
-        bottom: 0;
-        width: max-content;
-        z-index: -1;
-        margin-left: -22rem;
-        top: 3rem;
+    h2{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #7510B7;
     }
-
-    h2 {
-        font-size: 1.875rem;
-        font-weight: 700;
-        color: rgba(117, 16, 183, 1);
-    }
-    h3 {
+    h3{
         font-size: 1.5rem;
         font-weight: 600;
         text-transform: uppercase;
     }
-    p {
-        font-size: 1.125rem;
-        font-weight: 200;
-
-    }
-}
-.box-Image {
-    display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 30px;
-}
-.btn-home {
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    background-color: rgba(140,140,140,0.1);
-}
-.btn-font {
-    font-size: 1.25rem;
-    font-weight: normal;
-    margin: 5px;
-    color: #5D5D5D5D;
-}
-.diensten-article{
-    h1{
-        padding: 25px;
-        text-align: center;
+    width: 100%;
+    .main-Intro__image{
+        padding: 2.5rem;
     }
-    h2 {
-        font-size: 1.25rem;
-    }
-    p {
-        font-size: 0.9rem;
-    }
-
-    background: url("../public/diensten-d.png") no-repeat center ;
-    justify-content: space-around;
-    padding: 10px;
-    height: auto;
-
-    article{
-        background-color:white;
-        max-width: 398px;
-        padding: 25px;
-        margin: 10px;
-        text-align: center;
+    button{
+        padding: 10px;
+        border-style: none;
+        border-radius: 10px;
+        a{
+            padding: 1rem;
+            font-size: 1.25rem;
+            color: #5D5D5D;
+        }
     }
 }
 
-.klanttevredenheid-article{
-    h1{
-        padding: 25px;
+.service-container{
+    h2{
+        color: #fff;
+        font-size: 1.5rem;
         text-align: center;
+        padding: 10px;
     }
-    h2 {
-        font-size: 1.25rem;
-    }
-    p {
-        font-size: 0.9rem;
+    section{
+        margin: .5rem;
     }
     article{
+        width: 100%;
+        background-color: #fff;
+        padding: 2rem;
+        margin: 15px auto;
         border-radius: 5px;
-        box-shadow:5px 5px 15px #707070;
-        max-width: 398px;
-        padding: 25px;
-        margin: 10px;
         text-align: center;
     }
-    justify-content: space-around;
-    padding: 10px;
-    height: auto;
+    background-image: url("../public/diensten-d.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
-.next-btn{
-    width: 150px;
-    height: 35px;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    .next-btn__1{
-        width: 25px;
-        height: 20px;
-        background-color: #D8D8D8;
-    }
-}
-
-
-
-
 @media screen and (min-width: 768px) {
-    .menubar {
-        display: none;
-    }
     
 }
 @media screen and (min-width: 992px) {
-    .diensten-article {
-        padding: 50px;
-        h1{
-            padding: 35px;
-            text-align: left;
-        }
-        article{
-            margin: inherit;
-            
-        }
-        
+    .header-Home{
+        padding: 5rem;
     }
+    .main-Intro__image{
+        padding: unset;
+        order: 2;
+    }
+    .menu{
+        justify-content: flex-end;
+    }
+    }
+@media screen and (min-width: 1200px) {
+    .menubar{
+        display: none;
+    }
+    .menu{
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+                a{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    color:#000 !important;
+                }
+        }
+    }
+
+.header-Home{
+    padding: 10rem;
 }
+.main-Intro{
+    .main-Intro__image{
+        padding-left: 3rem;
+        padding-top: 2rem;
+    }
+    h2{
+        font-size: 3.75rem;
+        font-weight: normal;
+        margin-bottom: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    article{
+        margin:5rem auto;
+        width: 100%;
+    }
+    button{
+        a{
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+    }
+@media screen and (min-width: 1400px) {
+    .header-Home{
+        padding: 15rem;
+    }
+    }
