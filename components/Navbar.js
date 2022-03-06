@@ -6,10 +6,10 @@ const Navbar = () => {
 
         <div id='logo' className="container">
             <div className="row ">
-                <div className="col-8 col-lg">
+                <div className="col-10 col-lg">
                     <a href="#"><img alt="img" src='./logo_billiet.png' className='img-fluid'/></a>
                 </div>
-                <div className="col-4 col-lg menu">
+                <div className="col-2 col-lg menu">
                     <div className="menubar"></div>
                     <ul className="menu-items">
                             <li><a href="">Over Ons</a></li>

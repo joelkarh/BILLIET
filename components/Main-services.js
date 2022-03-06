@@ -10,11 +10,14 @@ const MainServices = () => {
                     <article key={id} className="col-xl">
                     <Image alt="l" src={src} width={80} height={80} objectFit='cover'/>
                     <h3>{title}</h3>
-                    <p>{description}</p>
-                    <button><a href="#">More...</a></button>
+                    <p className="truncate" >{description}</p>
+                    <button><a href="#">Meer...</a></button>
                 </article>
                 ))}
             </section>
+
+            {/*  eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/pc-bg.png" alt="" className='bg-intro'/>
         </section>
     )
 }

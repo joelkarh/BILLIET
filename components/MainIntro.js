@@ -21,6 +21,7 @@ const MainIntro = () => {
                         is dan ook ons doel om de klant gelukkig te maken.</p>
                     <button><a href="#">Lees meer</a></button>
                 </div>
+                
             </article>
             
         </section>
