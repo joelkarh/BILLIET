@@ -15,9 +15,6 @@ const MainServices = () => {
                 </article>
                 ))}
             </section>
-
-            {/*  eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/pc-bg.png" alt="" className='bg-intro'/>
         </section>
     )
 }

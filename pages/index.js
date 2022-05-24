@@ -21,8 +21,8 @@ export default function Home() {
         <Header/>
         <MainIntro/>
         <MainServices/>
-        <MainReviews/>
         <Info/>
+        
         <Footer/>
         </>
     )
