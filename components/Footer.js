@@ -21,25 +21,23 @@ export const Footer = () => {
                     <h6>Links</h6>
                     <ul>
                         <li>
-                            <Link href="#">
+                            <Link href="/About">
                                 <a>
                                     Over ons
                                 </a>
                             </Link>
-
                         </li>
                         <li>
-                            <Link href="#">
+                            <Link href="/Services">
                                 <a>
                                     Diensten
                                 </a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="#">
+                            <Link href="/Contact">
                                 <a>Contact us</a>
                             </Link>
-
                         </li>
                         <li>
                             <Link href="#">
@@ -63,7 +61,6 @@ export const Footer = () => {
                             </Link>
                         </li>
                     </ul>
-                   
                 </div>
                 <adress className="col footer-adress">
                     <h6>
@@ -77,7 +74,7 @@ export const Footer = () => {
                             </Link>
                         </li>
                         <span className="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2518.5091391402198!2d3.3214943!3d50.8587734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c33c74f062de17%3A0x755827d1ec24925c!2sGroot-Brittanjelaan%2059%2C%208530%20Harelbeke!5e0!3m2!1snl!2sbe!4v1653389127131!5m2!1snl!2sbe"   allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2518.5091391402198!2d3.3214943!3d50.8587734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c33c74f062de17%3A0x755827d1ec24925c!2sGroot-Brittanjelaan%2059%2C%208530%20Harelbeke!5e0!3m2!1snl!2sbe!4v1653389127131!5m2!1snl!2sbe"   allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </span>
                         <li>
                             <FiPhone/>

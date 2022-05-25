@@ -1,16 +1,17 @@
 import Image from "next/image";
 
-const Header = () => {
+const Header = (props) => {
     return (
     <header id='wrapper' className="container-fluid">
-        <div className="header-Home ">
-            <h1> Experten in verhuis</h1>
-            <p>BILLIET QUALITY MOVERS verhuist uw meubels en goederen met de GROOTST MOGELIJKE ZORG. Met onze uitstekende transportservice over het volledige nationale grondgebied garanderen wij een veilige verhuis van al uw waardevolle bezittingen.</p>
+        <div key={props.id} className="header-Home ">
+            <h1>{props.title}</h1>
+            <p>{props.description}</p>
         </div>
-       
     </header>
     )
 };
 
 
 export default Header;
+
+

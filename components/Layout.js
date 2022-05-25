@@ -4,13 +4,11 @@ import Navbar from "./Navbar"
 
 const Layout = ({children}) => {
     return (
-    <div className="container-fluid layout">
-        <nav className="row">
-            <Navbar/>
-        </nav>
-        <Header/>
+    <>
+    <Navbar/>
+    <Header/>
         {children}
-        </div>
+        </>
     )
 };
 
