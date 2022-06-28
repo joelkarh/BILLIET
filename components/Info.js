@@ -6,7 +6,7 @@ const Info = () => {
         <section className="container-fluid info-container">
             <h3>Vraag naar informatie</h3>
             <button>
-                <Link href="#">
+                <Link href="/Contact">
                     <a>Contact</a>
                 </Link>
             </button>
